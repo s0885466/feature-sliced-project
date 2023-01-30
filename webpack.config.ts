@@ -1,13 +1,14 @@
-const webpack = require('webpack');
-const path = require('path');
+import path from "path";
+import webpack from "webpack";
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+const config: webpack.Configuration = {
   mode: "development",
-  entry: './src/index.ts',
+  entry: path.resolve(__dirname, 'src', 'index.ts'),
   output: {
-    filename: '[contenthash].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'build'),
     clean: true
   },
   resolve: {
@@ -23,7 +24,9 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({template: path.resolve('public', 'index.html')}),
+    new HtmlWebpackPlugin({template: path.resolve(__dirname, 'public', 'index.html')}),
     new webpack.ProgressPlugin()
   ]
 };
+
+export default config;
