@@ -1,14 +1,12 @@
 import {RuleSetRule} from "webpack";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 export const buildLoaders = (): RuleSetRule[] => {
   const styleLoader = {
       test: /\.s[ac]ss$/i,
       use: [
-        // Creates `style` nodes from JS strings
-        "style-loader",
-        // Translates CSS into CommonJS
+        MiniCssExtractPlugin.loader,
         "css-loader",
-        // Compiles Sass to CSS
         "sass-loader",
       ],
     }
