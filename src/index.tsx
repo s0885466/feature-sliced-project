@@ -1,7 +1,14 @@
 import ReactDOM from 'react-dom';
-import {App} from "./component/App/App";
+import {App} from "./app";
+import ThemeProvider from "./theme/theme-provider";
+import {BrowserRouter} from "react-router-dom";
 
-import './index.scss'
 const container = document.getElementById("root");
 
-ReactDOM.render(<App/>, container);
+ReactDOM.render(
+  <BrowserRouter>
+    <ThemeProvider>
+      <App/>
+    </ThemeProvider>
+  </BrowserRouter>,
+  container);
