@@ -1,8 +1,10 @@
 import React from 'react';
 
+import styles from './Title.module.scss';
+
 export const Title = () => {
   return (
-    <div>
+    <div className={styles.container}>
       Title
     </div>
   );
