@@ -5,5 +5,8 @@
   "Главная": "Main",
   "О сайте": "About site",
   "Переключить": "Toggle",
-  "Страница не найдена": "Page is not found"
+  "Страница не найдена": "Page is not found",
+  "Произошла непредвиденная ошибка": "An unexpected error has occurred",
+  "Обновить страницу": "Refresh the page",
+  "Вызвать тестовую ошибку": "Throw test error"
 }
