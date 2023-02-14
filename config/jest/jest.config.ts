@@ -3,14 +3,25 @@
  * https://jestjs.io/docs/configuration
  */
 
+import path from 'path';
+
 export default {
+    rootDir: '../../',
+    moduleNameMapper: {
+        '\\.(s?css)$': 'identity-obj-proxy',
+        '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+    },
     clearMocks: true,
     testEnvironment: 'jsdom',
+    setupFilesAfterEnv: ['<rootDir>config/jest/setupTest.ts'],
     coveragePathIgnorePatterns: [
         '/node_modules/',
     ],
     moduleDirectories: [
         'node_modules',
+    ],
+    modulePaths: [
+        '<rootDir>src',
     ],
     moduleFileExtensions: [
         'js',
@@ -22,7 +33,6 @@ export default {
         'json',
         'node',
     ],
-    rootDir: '../../',
     testMatch: [
         '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
     ],
