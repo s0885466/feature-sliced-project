@@ -5,7 +5,7 @@ module.exports = {
         es2021: true,
     },
     extends: [
-        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
         'airbnb',
     ],
     parser: '@typescript-eslint/parser',
@@ -20,6 +20,7 @@ module.exports = {
         'react',
         '@typescript-eslint',
         'i18next',
+        'react-hooks',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -41,15 +42,20 @@ module.exports = {
             'error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] },
         ],
         'max-len': ['error', { ignoreComments: true, code: 100 }],
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'error',
     },
     globals: {
         __IS_DEV__: true,
     },
     overrides: [
         {
-            files: ['**/src/**/*.test.{ts,tsx}'],
+            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
             rules: {
                 'i18next/no-literal-string': 'off',
+                'max-len': 'off',
             },
         },
     ],
