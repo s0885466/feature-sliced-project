@@ -4,7 +4,6 @@ import React, {
     useCallback, useEffect, useRef, useState,
 } from 'react';
 import { Portal } from 'shared/ui/Portal/Portal';
-import { useTheme } from 'app/providers/ThemeProvider';
 import cls from './Modal.module.scss';
 
 type ModalProps = {
@@ -17,7 +16,6 @@ type ModalProps = {
 const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
-    const { theme } = useTheme();
     const {
         className, children, isOpen, onClose,
     } = props;
@@ -39,7 +37,7 @@ export const Modal = (props: ModalProps) => {
         e.stopPropagation();
     };
 
-    useEffect(() => function () {
+    useEffect(() => () => {
         clearTimeout(timerRef.current);
     }, []);
 
@@ -62,7 +60,6 @@ export const Modal = (props: ModalProps) => {
     const mods: Record<string, boolean> = {
         [cls.opened]: isOpen,
         [cls.isClosing]: isClosing,
-        [cls[theme]]: true,
     };
 
     return (
