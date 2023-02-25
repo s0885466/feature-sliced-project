@@ -1,5 +1,5 @@
 import { counterActions, counterReducer } from '../slice/counterSlice';
-import { CounterSchema } from '../type/counterSchema';
+import { CounterSchema } from '../types/counterSchema';
 
 describe('counterSlice.test', () => {
     let state: CounterSchema = {
