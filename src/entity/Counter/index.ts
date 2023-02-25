@@ -1,2 +1,2 @@
-export { CounterSchema } from './model/type/counterSchema';
+export { CounterSchema } from './model/types/counterSchema';
 export { counterReducer, counterActions } from './model/slice/counterSlice';
