@@ -31,8 +31,7 @@
     // import * as React from 'react';
     // можно писать такой
     // import React from 'react';
-    "allowSyntheticDefaultImports": true,
-    //"strictNullChecks": true
+    "allowSyntheticDefaultImports": true
   },
   "ts-node": {
     "compilerOptions": {
@@ -40,8 +39,8 @@
     }
   },
   "include": [
-    "./config/jest/setupTest.ts",
+    "./config/jest/setupTests.ts",
     "./src/**/*.ts",
-    "./src/**/*.tsx"
+    "./src/**/*.tsx",
   ]
 }
