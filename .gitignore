@@ -1,7 +1,6 @@
-node_modules
 /build
+node_modules
+.idea
 /storybook-static
-*.css.map
-*.css
 .loki/report.html
 .loki/report.json
