@@ -6,11 +6,19 @@ interface UseThemeResult {
     theme: Theme;
 }
 
+const THEMES_QUEUE: Theme[] = [Theme.LIGHT, Theme.DARK, Theme.ORANGE];
+
 export function useTheme(): UseThemeResult {
     const { theme, setTheme } = useContext(ThemeContext);
 
     const toggleTheme = () => {
-        const newTheme = theme === Theme.DARK ? Theme.LIGHT : Theme.DARK;
+        let newTheme = Theme.LIGHT;
+        const themeIndex = THEMES_QUEUE.findIndex((themeItem) => themeItem === theme);
+
+        if (themeIndex < (THEMES_QUEUE.length - 1)) {
+            newTheme = THEMES_QUEUE[themeIndex + 1];
+        }
+
         setTheme?.(newTheme);
         localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
     };
