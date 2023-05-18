@@ -16,6 +16,7 @@ export enum TextAlign {
 export enum TextSize {
     M = 'size_m',
     L = 'size_l',
+    XL = 'size_xl'
 }
 
 interface TextProps {
