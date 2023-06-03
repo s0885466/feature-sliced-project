@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import {
     fetchProfileData,
-    getProfileData,
     getProfileError,
     getProfileForm,
     getProfileIsLoading,
@@ -11,8 +10,7 @@ import {
     getProfileValidateErrors,
     profileActions,
     ProfileCard,
-    profileReducer,
-    ValidateProfileError,
+    profileReducer, ValidateProfileError,
 } from 'entities/Profile';
 import { useCallback, useEffect } from 'react';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
@@ -22,7 +20,6 @@ import { Country } from 'entities/Country';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { useParams } from 'react-router-dom';
-import { getUserAuthData } from 'entities/User';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 
 const reducers: ReducersList = {
@@ -30,7 +27,7 @@ const reducers: ReducersList = {
 };
 
 interface ProfilePageProps {
-  className?: string;
+    className?: string;
 }
 
 const ProfilePage = ({ className }: ProfilePageProps) => {
