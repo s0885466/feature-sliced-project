@@ -58,6 +58,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'alinovskiy-plugin-fsd/path-checker': 'error',
+        'react/no-array-index-key': 'warn',
     },
     globals: {
         __IS_DEV__: true,
