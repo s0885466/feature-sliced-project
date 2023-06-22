@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --env port=3000",
+    "start:vite": "vite",
     "start:dev": "concurrently \"npm start\" \"npm run start:dev:server\"",
+    "start:dev:vite": "concurrently \"npm run start:vite\" \"npm run start:dev:server\"",
     "start:dev:server": "node ./json-server/index.js",
     "build:prod": "webpack  --env mode=production apiUrl=https://production-project-server.vercel.app",
     "build:dev": "webpack  --env mode=development",
@@ -105,6 +107,7 @@
     "@react-spring/web": "^9.7.2",
     "@reduxjs/toolkit": "^1.8.0",
     "@use-gesture/react": "^10.2.27",
+    "@vitejs/plugin-react": "^4.0.1",
     "axios": "^0.26.1",
     "concurrently": "^7.0.0",
     "i18next": "^21.9.0",
@@ -116,7 +119,8 @@
     "react-i18next": "^11.18.3",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
-    "react-virtualized": "^9.22.3"
+    "react-virtualized": "^9.22.3",
+    "vite-plugin-svgr": "^3.2.0"
   },
   "loki": {
     "configurations": {
