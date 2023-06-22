@@ -47,7 +47,9 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to', 'role', 'as', 'direction', 'target', 'justify', 'border'],
+                ignoreAttribute: [
+                    'align', 'data-testid', 'to', 'role', 'as', 'direction', 'target', 'justify', 'border',
+                ],
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 120 }],
@@ -59,6 +61,7 @@ module.exports = {
         'no-undef': 'off',
         'alinovskiy-plugin-fsd/path-checker': 'error',
         'react/no-array-index-key': 'warn',
+        'arrow-body-style': 'off',
     },
     globals: {
         __IS_DEV__: true,
