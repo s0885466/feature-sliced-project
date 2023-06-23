@@ -60,6 +60,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'alinovskiy-plugin-fsd/path-checker': ['error', { alias: '@' }],
+        'alinovskiy-plugin-fsd/public-api-imports': ['error', { alias: '@' }],
         'react/no-array-index-key': 'warn',
         'arrow-body-style': 'off',
     },
