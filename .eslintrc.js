@@ -59,7 +59,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies,
         'no-param-reassign': 'off',
         'no-undef': 'off',
-        'alinovskiy-plugin-fsd/path-checker': 'error',
+        'alinovskiy-plugin-fsd/path-checker': ['error', { alias: '@' }],
         'react/no-array-index-key': 'warn',
         'arrow-body-style': 'off',
     },

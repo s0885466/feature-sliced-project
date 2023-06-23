@@ -7445,10 +7445,10 @@
     "debug" "^3.2.7"
     "find-up" "^2.1.0"
 
-"eslint-plugin-alinovskiy-plugin-fsd@0.0.5":
-  "integrity" "sha512-QYFW3EM+a07ZI17zgRmCDOrgIpvQxLOc0RNtLB9Dg2IWsjA5l08TUgEaUFGNgL7HhUn0y4CK5YJm/wC2tZmU1w=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-alinovskiy-plugin-fsd/-/eslint-plugin-alinovskiy-plugin-fsd-0.0.5.tgz"
-  "version" "0.0.5"
+"eslint-plugin-alinovskiy-plugin-fsd@^0.0.6":
+  "integrity" "sha512-dQi0izHOk5jJtvB9V0/m4GQ2EDWsqhw1nLbbfmQHYalJEUce/juqHAjhGhERJg5NHsWHBztmk/w9rlMSK5UEoA=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-alinovskiy-plugin-fsd/-/eslint-plugin-alinovskiy-plugin-fsd-0.0.6.tgz"
+  "version" "0.0.6"
   dependencies:
     "requireindex" "^1.2.0"
     "upath" "^2.0.1"
