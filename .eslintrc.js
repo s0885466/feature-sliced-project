@@ -23,6 +23,7 @@ module.exports = {
         'i18next',
         'react-hooks',
         'alinovskiy-plugin-fsd',
+        'unused-imports',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -61,6 +62,7 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'warn',
         'arrow-body-style': 'off',
+        'unused-imports/no-unused-imports': 'error',
         'alinovskiy-plugin-fsd/path-checker': ['error', { alias: '@' }],
         'alinovskiy-plugin-fsd/public-api-imports': [
             'error', {
