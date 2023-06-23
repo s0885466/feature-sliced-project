@@ -62,10 +62,18 @@ module.exports = {
         'react/no-array-index-key': 'warn',
         'arrow-body-style': 'off',
         'alinovskiy-plugin-fsd/path-checker': ['error', { alias: '@' }],
-        'alinovskiy-plugin-fsd/public-api-imports': ['error', {
-            alias: '@',
-            testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
-        }],
+        'alinovskiy-plugin-fsd/public-api-imports': [
+            'error', {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
+        'alinovskiy-plugin-fsd/layer-imports': [
+            'error', {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
