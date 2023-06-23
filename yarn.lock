@@ -5371,7 +5371,7 @@
     "split-string" "^3.0.2"
     "to-regex" "^3.0.1"
 
-"braces@^3.0.1", "braces@~3.0.2":
+"braces@^3.0.2", "braces@~3.0.2":
   "integrity" "sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A=="
   "resolved" "https://registry.npmjs.org/braces/-/braces-3.0.2.tgz"
   "version" "3.0.2"
@@ -7445,11 +7445,12 @@
     "debug" "^3.2.7"
     "find-up" "^2.1.0"
 
-"eslint-plugin-alinovskiy-plugin-fsd@0.0.7":
-  "integrity" "sha512-A4y67Yj2GgzM2IMAr6kLAU1FjjAy3ldrPm1w8rGqs0aUhMGkL1bTHBDbDYl5dC207b66ltXnyOA1MIa7YTCFPA=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-alinovskiy-plugin-fsd/-/eslint-plugin-alinovskiy-plugin-fsd-0.0.7.tgz"
-  "version" "0.0.7"
+"eslint-plugin-alinovskiy-plugin-fsd@0.0.8":
+  "integrity" "sha512-WCXK9DuTs6sDZKqBdKFGMvIh7VXCF82r1PnBxnZ94PdB2W22KyM/hgNGSdNlocSAVxYryX8HQVj/VIDzZN5nQw=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-alinovskiy-plugin-fsd/-/eslint-plugin-alinovskiy-plugin-fsd-0.0.8.tgz"
+  "version" "0.0.8"
   dependencies:
+    "micromatch" "^4.0.5"
     "requireindex" "^1.2.0"
     "upath" "^2.0.1"
 
@@ -11157,13 +11158,13 @@
     "snapdragon" "^0.8.1"
     "to-regex" "^3.0.2"
 
-"micromatch@^4.0.0", "micromatch@^4.0.2", "micromatch@^4.0.4":
-  "integrity" "sha512-pRmzw/XUcwXGpD9aI9q/0XOwLNygjETJ8y0ao0wdqprrzDa4YnxLcz7fQRZr8voh8V10kGhABbNcHVk5wHgWwg=="
-  "resolved" "https://registry.npmjs.org/micromatch/-/micromatch-4.0.4.tgz"
-  "version" "4.0.4"
+"micromatch@^4.0.0", "micromatch@^4.0.2", "micromatch@^4.0.4", "micromatch@^4.0.5":
+  "integrity" "sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA=="
+  "resolved" "https://registry.npmjs.org/micromatch/-/micromatch-4.0.5.tgz"
+  "version" "4.0.5"
   dependencies:
-    "braces" "^3.0.1"
-    "picomatch" "^2.2.3"
+    "braces" "^3.0.2"
+    "picomatch" "^2.3.1"
 
 "miller-rabin@^4.0.0":
   "integrity" "sha512-115fLhvZVqWwHPbClyntxEVfVDfl9DLLTuJvq3g2O/Oxi8AiNouAHvDSzHS0viUJc+V5vm3eq91Xwqn9dp4jRA=="
