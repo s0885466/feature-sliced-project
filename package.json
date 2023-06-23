@@ -26,7 +26,9 @@
     "storybook:build": "build-storybook -c ./config/storybook",
     "prepare": "husky install",
     "generate:slice": "node ./scripts/createSlice/index.js",
-    "gen": "node scripts/my-test-script/index.js features click"
+    "gen": "node scripts/my-test-script/index.js features click",
+    "refactoring1": "ts-node scripts/refactoring/createPublicApiForSharedUi.ts",
+    "refactoring2": "ts-node scripts/refactoring/updateImports.ts"
   },
   "keywords": [],
   "author": "",
