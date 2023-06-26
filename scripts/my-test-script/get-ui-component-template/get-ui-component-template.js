@@ -6,7 +6,9 @@ type ${componentNameProps(componentName)} = {
   
 }
 
-export const ${componentName} = memo((props: ${componentNameProps(componentName)}) => {
+export const ${componentName} = memo((props: ${componentNameProps(
+    componentName,
+)}) => {
     return (
         <div>
            ${componentName}

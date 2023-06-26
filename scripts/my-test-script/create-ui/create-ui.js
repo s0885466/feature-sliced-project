@@ -2,7 +2,9 @@ const path = require('path');
 const fs = require('fs/promises');
 
 const { getSliceDirPath } = require('../get-slice-dir-path/get-slice-dir-path');
-const { getUiComponentTemplate } = require('../get-ui-component-template/get-ui-component-template');
+const {
+    getUiComponentTemplate,
+} = require('../get-ui-component-template/get-ui-component-template');
 
 const createUi = async (layer, sliceName) => {
     // создать директорию ui
